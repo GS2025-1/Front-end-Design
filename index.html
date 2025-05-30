@@ -6,8 +6,9 @@
     <title>Sistema de Monitoramento de Nível de Água - Global Solution FIAP</title>
     <link rel="stylesheet" href="src/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    </head>
+</head>
 <body>
     <div class="sidebar">
         <div class="sidebar-header">
@@ -15,6 +16,15 @@
             <button class="close-btn" aria-label="Fechar menu">
                 <i class="fas fa-times"></i>
             </button>
+        </div>
+        <div class="theme-btn">
+            <span class="material-icons-sharp" data-mode="light">light_mode</span>
+            <span class="material-icons-sharp" data-mode="dark">dark_mode</span>
+        </div>
+        <div class="color-palette">
+            <button class="color-btn" data-light-bg="#f0f8ff" data-dark-bg="#2b303a"></button>
+            <button class="color-btn" data-light-bg="#e6ffe6" data-dark-bg="#2a3a2a"></button>
+            <button class="color-btn" data-light-bg="#fffaf0" data-dark-bg="#3a3a2a"></button>
         </div>
         <nav class="navbar">
             <ul class="nav-links">
@@ -25,7 +35,7 @@
                 <li><a href="#publico-alvo" data-section="publico-alvo">Público-Alvo</a></li>
                 <li><a href="#beneficios" data-section="beneficios">Benefícios</a></li>
                 <li><a href="#dia-a-dia" data-section="dia-a-dia">Dia a Dia</a></li>
-                <li><a href="#Quiz" data-section="quiz">Quiz</a></li>
+                <li><a href="/src/pages/quiz.html" data-section="quiz">Quiz</a></li>
                 <li><a href="/src/pages/contato.html" class="btn">Contatos</a></li>
             </ul>
         </nav>
@@ -47,7 +57,29 @@
                 <p>Sua segurança contra enchentes e alagamentos começa aqui. Monitore o nível da água em tempo real e receba alertas precisos.</p>
                 <a href="#problema" class="btn">Saiba Mais</a>
             </div>
-            <img src="src/assets/imgs/risco de enchente.jpeg" alt="Imagem ilustrativa de um ambiente urbano com água subindo, mostrando o risco de enchentes." class="hero-image">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="src/assets/imgs/risco de enchente.jpeg" style="width:100%" alt="Primeira imagem do slideshow mostrando o risco de enchente.">
+                </div>
+
+                <div class="slide fade">
+                    <img src="src/assets/imgs/alagamentos.avif" style="width:100%" alt="Segunda imagem do slideshow mostrando ruas alagadas.">
+                </div>
+
+                <div class="slide fade">
+                    <img src="src/assets/imgs/alagamentos3.jpg" style="width:100%" alt="Terceira imagem do slideshow mostrando ruas alagadas.">
+                </div>
+                <div class="slide fade">
+                    <img src="src/assets/imgs/alagamentos4.jpg" style="width:100%" alt="Quarta imagem do slideshow mostrando a cidade alagada.">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </section>
 
         <section id="problema" class="content-section">
