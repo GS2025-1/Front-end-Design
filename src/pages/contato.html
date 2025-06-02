@@ -10,29 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <div class="logo">💧 Monitor</div>
-            <button class="close-btn" aria-label="Fechar menu">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="/index.html" data-section="problema">Página Inicial</a></li>
-                <li><a href="#Quiz" data-section="quiz">Quiz</a></li>
-                <li><a href="src/pages/contato.html" class="active" data-section="contact">Contatos</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="overlay"></div>
-
     <header class="main-header">
-        <button class="hamburger-btn" aria-label="Abrir menu">
-            <i class="fas fa-bars"></i>
-        </button>
-        <h1>Contato</h1> </header>
+        <h1>Contato</h1> 
+        <div class="nav-links">
+            <a href="/index.html" data-section="problema">Página Inicial</a>
+            <a href="#Quiz" data-section="quiz">Quiz</a></li>
+            <a href="/src/pages/contato.html" class="btn">Contatos</a>
+        </div>
+    </header>
 
     <div class="main-content">
         <div class="contact-page-container">
@@ -71,12 +56,10 @@
             </div>
         </div>
 
-        <div class="graphic-circle"></div>
-        <div class="graphic-person-icon"></div>
-
         <footer>
             <p>&copy;2025 - Projeto Global Solution FIAP</p>
         </footer>
-    </div> <script src="/src/js/script.js"></script>
+    </div> 
 </body>
+<script src="/src/js/script.js"></script>
 </html>
